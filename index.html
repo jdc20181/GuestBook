@@ -1,0 +1,25 @@
+<html> 
+  <head> 
+  
+   <title> My Guest Book </title> 
+  </head> 
+  <body> 
+
+   <div class="thread"> 
+    <?php include "data.php"; ?> 
+   </div> 
+
+   <div class="add"> 
+   <b>Add entry</b> <br/> <br/> 
+
+   <form action="insert.php" method="post"> 
+    <input type="hidden" name="posted" value="yes"> 
+    Nickname: <input type="text" name="name"> <br/> <br/> 
+    Post:<br/> 
+    <textarea cols="50" rows="5" name="post">Enter Any Comment Here...</textarea> <br/> 
+    <input type="submit" value="Submit"> 
+   </form>  
+  </div> 
+
+  </body> 
+ </html>

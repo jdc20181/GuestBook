@@ -1,16 +1,20 @@
-<!Doctype html>
+<!doctype html>
 <html>
-<head>
-</head>
-<body>
-<form>
-Nick-Name: <input type="text" placeholder="Nickname"required>
-<br>
-Message:
-<br>
-<textarea cols="25" Rows="4" placeholder="what would you like to say? Be nice!" required></textarea>
-<br>
-<button onclick="submit()">Send Message!</button>
-</form>
-</body>
+<div class="shoutbox">
+    
+    <h1>Shout box <img src='./assets/img/refresh.png'/></h1>
+    
+    <ul class="shoutbox-content"></ul>
+    
+    <div class="shoutbox-form">
+        <h2>Write a message <span>×</span></h2>
+        
+        <form action="./publish.php" method="post">
+            <label for="shoutbox-name">nickname </label> <input type="text" id="shoutbox-name" name="name"/>
+            <label class="shoutbox-comment-label" for="shoutbox-comment">message </label> <textarea id="shoutbox-comment" name="comment" maxlength='240'></textarea>
+            <input type="submit" value="Shout!"/>
+        </form>
+    </div>
+    
+</div>
 </html>
